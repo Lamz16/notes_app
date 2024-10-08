@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/custom_widget/bigger_text.dart';
 import 'package:notes_app/custom_widget/custom_fab.dart';
 import 'package:notes_app/custom_widget/heading.dart';
+import 'package:notes_app/custom_widget/say_hi_txt.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const SayHiTxt(text: 'Hi Guys'),
             const BiggerText(
               text: 'You have pushed the button this many times:',
             ),
