@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/custom_widget/bigger_text.dart';
 import 'package:notes_app/custom_widget/custom_fab.dart';
 import 'package:notes_app/custom_widget/heading.dart';
+import 'package:notes_app/custom_widget/item_action_home.dart';
 import 'package:notes_app/custom_widget/say_hi_txt.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -57,6 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const ItemActionHome(
+              share: Icon(Icons.share),
+              thumbUp: Icon(Icons.thumb_up),
+              thumbDown: Icon(Icons.thumb_down),
+              padding: EdgeInsets.only(top: 16),
+            )
           ],
         ),
       ),
